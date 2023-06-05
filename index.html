@@ -33,6 +33,16 @@
             <li class="menu-item"><a href="" class="menu-link link">Contacts</a></li>
           </ul>
         </nav>
+        <button 
+        type="button" 
+        class="mobile-menu-open-btn js-open-menu" 
+        aria-expanded="false" 
+        aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-open-btn-icon" width="32" height="22">
+           <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <address class="page-address">
           <ul class="list-address list">
             <li class="contacts-header-link link">
@@ -44,17 +54,88 @@
           </ul>
         </address>
       </div>
+      <!-- Mobile Menu -->
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close-btn js-close-menu">
+            <svg class="mobile-menu-close-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-close">
+            </svg>
+          </button>
+           <ul class="mobile-menu-list list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link active-page link" href="./index.html"
+                >Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="./portfolio.html"
+                >Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+          <div>
+          <address class="mobile-menu-contacts">
+            <ul class="mobile-menu-contacts-list list">
+              <li class="mobile-menu-contacts-item link">
+                <a class="mobile-menu-phone-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-menu-contacts-item link">
+                <a
+                  class="mobile-menu-e-mail-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-social-list list">
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" aria-label="instagram" width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" aria-label="twitter" width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" aria-label="facebook" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" aria-label="linkedin" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                </div>
+        </div>
+      </div>
     </header>
     <main>
       <!-- Hero -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="modal-open-btn" type="button" data-modal-open>Order Service</button>
         </div>
-      </section>
+      </section> -->
       <!-- Section About -->
-      <section class="about">
+      <!-- <section class="about">
         <div class="container">
           <h2 class="visually-hidden">Our qualities</h2>
           <ul class="about-list list">
@@ -108,9 +189,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Section What are we doing -->
-      <section class="services">
+      <!-- <section class="services">
         <div class="container">
           <h2 class="title">What are we doing</h2>
           <ul class="list-services list">
@@ -143,14 +224,14 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Section Our Team -->
-      <section class="team-company">
+      <!-- <section class="team-company">
         <div class="container">
           <h2 class="title">Our Team</h2>
           <ul class="list-team-company list">
             <li class="team-list-item">
-              <img class="team-list-img" src="./images/img1a.jpg" alt="Person" width="264" />
+              <img class="team-list-img" srcset="./images/img1a.jpg 1x, ./images/img1a@2x 2x" src="./images/img1a.jpg" alt="Person" width="264" />
               <div class="team-card-wrapper">
                 <h3 class="subtitle-name">Mark Guerrero</h3>
                 <p class="position">Product Designer</p>
@@ -299,9 +380,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Section Customers -->
-      <section class="customers">
+      <!-- <section class="customers">
         <div class="container">
           <h2 class="title">Customers</h2>
           <ul class="customers-list list">
@@ -350,9 +431,9 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
     <!-- Footer Content -->
-    <footer class="footer-block">
+    <!-- <footer class="footer-block">
       <div class="footer-wrapper container">
         <div class="logo-container">
           <a class="footer-logo link" href="./index.html"
@@ -417,9 +498,9 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- Modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
@@ -484,9 +565,9 @@
               name="user-comment"
               placeholder="Text input"
             ></textarea>
-          </div>
+          </div> -->
           <!-- Checkbox -->
-          <div class="modal-contact-form-checkbox">
+          <!-- <div class="modal-contact-form-checkbox">
             <input
               class="input-checkbox visually-hidden"
               type="checkbox"
@@ -510,7 +591,8 @@
           <button class="contact-form-submit" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
