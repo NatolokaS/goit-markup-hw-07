@@ -674,20 +674,20 @@ img {
   }
 }
 
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--color-dark);
+  margin-bottom: 72px;
+  line-height: 1.1;
+}
+
 @media screen and (min-width: 1158px) {
   .services {
     padding-bottom: 120px;
-  }
-
-  .title {
-    font-weight: 700;
-    font-size: 36px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--color-dark);
-    margin-bottom: 72px;
-    line-height: 1.1;
   }
 
   .list-services {
@@ -703,7 +703,106 @@ img {
 /* =======Section What are we doing ======== */
 /* ============ Section Our Team ============ */
 
+.team-company {
+  background: var(--color-light);
+}
+
+.team-list-item {
+  background: var(--color-white-background);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (max-width: 1157px) {
+  .team-company {
+    padding: 96px 0 96px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .list-team-company {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 72px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-team-company {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .team-company {
+    padding: 120px 0 120px;
+  }
+  .team-list-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+  .list-team-company {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+}
+
+.team-card-wrapper {
+  text-align: center;
+  padding: 32px 0;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.subtitle-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--color-dark);
+  margin-bottom: 8px;
+}
+
+.position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-primary-text);
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  fill: var(--color-light);
+  background-color: var(--color-primary);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--color-pressed);
+}
+
 /* ============ Section Our Team ============ */
+/* =========== Section Customers ============ */
+
 /* =========== Section Customers ============ */
 
 /* =========== Section Customers ============ */
