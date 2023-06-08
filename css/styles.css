@@ -93,7 +93,6 @@ img {
 @media screen and (max-width: 428px) {
   .container {
     width: 100%;
-    padding: 0;
   }
 }
 
@@ -284,7 +283,7 @@ img {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
   transition: opacity 500ms linear;
-  /* overflow: scroll; */
+  overflow: scroll;
 }
 
 .mobile-menu.is-open {
@@ -321,6 +320,8 @@ img {
 
 .mobile-menu-close-icon {
   fill: #2e2f42;
+  width: 8px;
+  height: 8px;
 }
 
 .social-list {
@@ -387,6 +388,8 @@ img {
 .mobile-menu-contacts-list {
   display: flex;
   text-align: center;
+  flex-wrap: wrap;
+  column-gap: 40px;
 }
 
 .active-page {
@@ -421,6 +424,7 @@ img {
     font-size: 36px;
   }
 }
+
 /*==============Mobile menu============*/
 /* ================= Header ================ */
 
@@ -544,7 +548,7 @@ img {
 /*==============Hero===================*/
 /* ============ Section About ============= */
 
-@media screen and (max-width: 1158px) {
+@media screen and (max-width: 1157px) {
   .icon-about {
     display: none;
   }
@@ -569,10 +573,6 @@ img {
   color: var(--color-primary-text);
 }
 
-.about-list-item {
-  margin-bottom: 72px;
-}
-
 @media screen and (min-width: 1158px) {
   .description-text {
     font-weight: 400;
@@ -594,10 +594,11 @@ img {
   width: 100%;
 }
 
-@media screen and (max-width: 767px) {
-  .about-list-item:not(:last-child) {
-    margin-bottom: 72px;
-  }
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 72px;
 }
 
 @media screen and (min-width: 768px) {
@@ -614,7 +615,8 @@ img {
 
   .about-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 72px 24px;
   }
   .subtitle {
     text-align: left;
@@ -664,6 +666,16 @@ img {
 }
 
 /* ============ Section About ============= */
+/* =======Section What are we doing ======== */
+/* 
+@media screen and (max-width: 1157px) {
+  .services {
+    display: none;
+  }
+} */
+
+/* =======Section What are we doing ======== */
+
 /* ============ Section Our Team ============ */
 /* =========== Section Customers ============ */
 
