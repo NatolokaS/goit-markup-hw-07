@@ -667,14 +667,41 @@ img {
 
 /* ============ Section About ============= */
 /* =======Section What are we doing ======== */
-/* 
+
 @media screen and (max-width: 1157px) {
   .services {
     display: none;
   }
-} */
+}
 
+@media screen and (min-width: 1158px) {
+  .services {
+    padding-bottom: 120px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--color-dark);
+    margin-bottom: 72px;
+    line-height: 1.1;
+  }
+
+  .list-services {
+    gap: 24px;
+    display: flex;
+    align-items: center;
+  }
+
+  .service-item {
+    width: calc((100% - 48px) / 3);
+  }
+}
 /* =======Section What are we doing ======== */
+/* ============ Section Our Team ============ */
 
 /* ============ Section Our Team ============ */
 /* =========== Section Customers ============ */
