@@ -484,17 +484,6 @@ img {
   }
 }
 
-/* @media screen and (min-width: 768px),
-  screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .hero {
-    background-size: cover;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url('../images/bg-d@2x.jpg');
-  }
-} */
-
 @media screen and (min-width: 1158px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
   screen and (min-resolution: 192dpi) and (min-width: 1158px),
@@ -535,28 +524,6 @@ img {
     background-size: cover;
   }
 }
-
-/* @media screen and (max-width: 767px),
-  screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .hero {
-    background-size: cover;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url('../images/bg-mob@2x.jpg');
-  }
-} */
-
-/* @media screen and (min-width: 768px),
-  screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .hero {
-    background-size: cover;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url('../images/bg-d@2x.jpg');
-  }
-} */
 
 .modal-open-btn {
   font-family: var(--main-font-family);
@@ -751,12 +718,12 @@ img {
     0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
-
+/* 
 @media screen and (max-width: 1157px) {
   .team-company {
     padding: 96px;
   }
-}
+} */
 
 @media screen and (max-width: 767px) {
   .list-team-company {
@@ -861,12 +828,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .customers-link-item {
-    width: calc((100% - 48px) / 3);
+    width: 168px;
   }
 
   .customers-list {
     row-gap: 72px;
     column-gap: 24px;
+    justify-content: center;
   }
 }
 
@@ -1055,12 +1023,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-light);
-}
-
-@media screen and (max-width: 428px) {
-  .footer-text {
-    width: 75%;
-  }
+  width: 264px;
 }
 
 .footer-block {
